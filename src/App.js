@@ -1,7 +1,10 @@
+import Nav from "./components/Nav";
+
 function App() {
   return (
     <div className="App">
-      <h1 className='text-red-500'>Hello world</h1>
+      <Nav />
+      <h1 className="mt-16">Hello world</h1>
     </div>
   );
 }
