@@ -1,15 +1,17 @@
 import { useState } from "react";
 import { GiFlowerTwirl, GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 function Nav() {
   const [open, setOpen] = useState(false);
   const links = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/" },
-    { name: "Projects", link: "/" },
-    { name: "Skills", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "Home", link: "top" },
+    { name: "About", link: "about" },
+    { name: "Projects", link: "projects" },
+    { name: "Skills", link: "skills" },
+    { name: "Contact", link: "contact" },
   ];
 
   return (
@@ -39,7 +41,10 @@ function Nav() {
               className="md:ml-8 text-xl text-[#0B2154] hover:text-[#EE410E] duration-500
               md:my-0 my-7"
             >
-              <a href={link.link}>{link.name}</a>
+              {/* <a href={link.link}>{link.name}</a> */}
+              <HashLink smooth to={`/#${link.link}`}>
+                {link.name}
+              </HashLink>
             </li>
           ))}
         </ul>
