@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Nav from "./components/Nav";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
@@ -10,12 +11,12 @@ function App() {
       <div id="about" className="bg-white h-screen ">
         <About />
       </div>
-      <div id="projects" className="bg-gray-500 h-screen ">
-        projects
+      <div id="projects" className="bg-gray-50  ">
+        <Projects />
       </div>
       <div
         id="skills"
-        className="bg-gray-50 h-screen flex items-center justify-center"
+        className="bg-gray-50 my-20 flex items-center justify-center"
       >
         <Skills />
       </div>
