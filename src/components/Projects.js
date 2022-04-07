@@ -9,19 +9,23 @@ const allCategories = [
 ];
 console.log(allCategories);
 
+// TODO: animations, active button stays styled
 function Projects() {
   const [projects, setProjects] = useState(projectsInfo);
   const [categories, setCategories] = useState(allCategories);
+  const [active, setActive] = useState(categories[0]);
 
   const filterProjects = (category) => {
     if (category === "all") {
       setProjects(projectsInfo);
+      setActive(category);
       return;
     }
     const newProjects = projectsInfo.filter(
       (project) => project.category === category
     );
     setProjects(newProjects);
+    setActive(category);
   };
 
   return (
@@ -31,7 +35,11 @@ function Projects() {
         <h1 className="text-[#EF310F] font-bold text-2xl">Recent Works</h1>
       </header>
       <section className="flex items-center justify-center">
-        <Categories categories={categories} filterProjects={filterProjects} />
+        <Categories
+          categories={categories}
+          active={active}
+          filterProjects={filterProjects}
+        />
       </section>
       <section>
         <ProjectList projects={projects} />
