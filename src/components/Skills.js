@@ -24,7 +24,10 @@ function Skills() {
   ];
 
   return (
-    <section className="flex items-center justify-center flex-col w-5/6 md:w-3/4">
+    <section
+      id="skills"
+      className="flex items-center justify-center mx-auto flex-col w-5/6 md:w-3/4 h-screen"
+    >
       <div className="p-4 text-center">
         <p className="text-sm text-[#0B2154]">My Abilities</p>
         <h1 className="text-[#EF310F] font-bold text-2xl">My Skills</h1>

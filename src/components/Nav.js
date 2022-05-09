@@ -1,50 +1,47 @@
-import { useState } from "react";
 import { GiFlowerTwirl, GiHamburgerMenu } from "react-icons/gi";
-import { IoMdClose } from "react-icons/io";
-import { NavHashLink } from "react-router-hash-link";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
+import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
 
-function Nav() {
-  const [open, setOpen] = useState(false);
-  const links = [
-    { name: "Home", link: "top" },
-    { name: "About", link: "about" },
-    { name: "Projects", link: "projects" },
-    { name: "Skills", link: "skills" },
-    { name: "Contact", link: "contact" },
-  ];
+function Nav({ toggle }) {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
 
   return (
-    <nav className="shadow-md w-full fixed top-0 left-0">
-      <div className="md:flex bg-white items-center justify-between py-4 md:px-10 px-7">
-        <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-[#0B2154]">
+    <nav className="bg-white h-20 -mt-20 flex justify-center items-center text-base sticky top-0 z-10">
+      <div className="flex justify-between h-20 z-10 w-full px-6 max-w-5xl">
+        <Link
+          to="/"
+          className="justify-self-start flex items-center font-bold text-[#0B2154]"
+          onClick={toggleHome}
+        >
           <span className="text-3xl text-[#EF310F] mr-1 ">
             <GiFlowerTwirl />
           </span>
           EgleReact
-        </div>
+        </Link>
         <div
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
-          onClick={() => setOpen(!open)}
+          className="md:hidden block absolute  text-[#0B2154] cursor-pointer
+         right-0 text-3xl top-0 -translate-x-full translate-y-[80%]"
+          onClick={toggle}
         >
-          {open ? <IoMdClose /> : <GiHamburgerMenu />}
+          <GiHamburgerMenu />
         </div>
-        <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0
-        w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-          open ? "top-20 opacity-100" : "top-[-490px]"
-        } md:opacity-100 opacity-0`}
-        >
+        <ul className="hidden md:flex items-center list-none text-center -mr-[22px]">
           {links.map((link) => (
-            <li
-              key={link.name}
-              className="md:ml-8 text-xl text-[#0B2154] hover:text-[#EE410E] duration-500
-              md:my-0 my-7"
-            >
-              {/* <a href={link.link}>{link.name}</a> */}
-              <HashLink smooth to={`/#${link.link}`}>
+            <li className="h-20" key={link.id}>
+              <LinkScroll
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                activeClass="border-b-4 border-[#EF310F]"
+                className={`text-[#0B2154] flex text-center px-4 h-full cursor-pointer items-center `}
+                to={link.link}
+              >
                 {link.name}
-              </HashLink>
+              </LinkScroll>
             </li>
           ))}
         </ul>
@@ -54,3 +51,11 @@ function Nav() {
 }
 
 export default Nav;
+
+const links = [
+  { id: 1, name: "Home", link: "home" },
+  { id: 2, name: "About", link: "about" },
+  { id: 3, name: "Projects", link: "projects" },
+  { id: 4, name: "Skills", link: "skills" },
+  { id: 5, name: "Contact", link: "contact" },
+];

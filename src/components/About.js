@@ -2,7 +2,10 @@ import AboutImg from "../images/about1.svg";
 
 function About() {
   return (
-    <div className="py-20 flex-col  md:flex-row md:flex md:items-center md:justify-between">
+    <div
+      id="about"
+      className="py-20 flex-col  md:flex-row md:flex md:items-center md:justify-between"
+    >
       <div>
         <h1>About Me</h1>
       </div>

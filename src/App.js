@@ -1,28 +1,23 @@
+import { useState } from "react";
 import About from "./components/About";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
+import Sidebar from "./components/Sidebar";
 import Skills from "./components/Skills";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
-    <div className="App">
-      <Nav />
-      <div className="bg-gray-500 h-screen mt-16">home</div>
-      <div id="about" className="bg-white h-screen ">
-        <About />
-      </div>
-      <div id="projects" className="bg-gray-50  ">
-        <Projects />
-      </div>
-      <div
-        id="skills"
-        className="bg-gray-50 my-20 flex items-center justify-center"
-      >
-        <Skills />
-      </div>
-      <div id="contact" className="bg-gray-500 h-screen ">
-        contact
-      </div>
+    <div>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Nav toggle={toggle} />
+      <div id="home">home</div>
+      <About />
+      <Projects />
+      <Skills />
+      <div id="contact">contact</div>
     </div>
   );
 }

@@ -29,8 +29,8 @@ function Projects() {
   };
 
   return (
-    <div>
-      <header className="flex flex-col items-center justify-content mb-10">
+    <div id="projects">
+      <header className="flex flex-col items-center justify-content ">
         <p className="text-sm text-[#0B2154]">My Portfolio</p>
         <h1 className="text-[#EF310F] font-bold text-2xl">Recent Works</h1>
       </header>
