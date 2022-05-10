@@ -1,5 +1,7 @@
 import { useState } from "react";
 import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Sidebar from "./components/Sidebar";
@@ -17,7 +19,8 @@ function App() {
       <About />
       <Projects />
       <Skills />
-      <div id="contact">contact</div>
+      <Contact />
+      <Footer />
     </div>
   );
 }

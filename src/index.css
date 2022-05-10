@@ -7,6 +7,14 @@
     @apply flex items-center justify-center text-2xl transition duration-300 ease-in-out hover:text-red-500
     cursor-pointer mb-5;
   }
+
+  .input-label {
+    @apply uppercase text-sm text-gray-600 font-bold;
+  }
+
+  .input-style {
+    @apply pl-2 text-lg bg-gray-200 text-gray-800 h-10 my-2 rounded-lg outline-2 outline-blue-500/50;
+  }
 }
 
 * {

@@ -1,6 +1,5 @@
 import React from "react";
-import { AiFillCheckCircle, AiFillHtml5 } from "react-icons/ai";
-import { FaCss3Alt } from "react-icons/fa";
+import { AiFillCheckCircle } from "react-icons/ai";
 
 function Skills() {
   const skillsFront = [
@@ -26,7 +25,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="flex items-center justify-center mx-auto flex-col w-5/6 md:w-3/4 h-screen"
+      className="flex items-center justify-center mx-auto flex-col w-5/6 md:w-3/4"
     >
       <div className="p-4 text-center">
         <p className="text-sm text-[#0B2154]">My Abilities</p>

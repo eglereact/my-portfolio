@@ -10,7 +10,11 @@ function ProjectList({ projects }) {
             key={id}
             className="shadow-lg bg-white flex flex-col items-center justify-center rounded-lg "
           >
-            <img src={img} className="rounded-lg  object-contain w-5/6 m-5" />
+            <img
+              src={img}
+              alt=""
+              className="rounded-lg  object-contain w-5/6 m-5"
+            />
             <div className="w-5/6">
               <h1 className="items-start capitalize font-bold text-gray-700">
                 {title}
