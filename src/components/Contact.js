@@ -27,7 +27,7 @@ function Contact() {
 
   return (
     <div id="contact" className="bg-[#F4F7F9] flex justify-center items-center">
-      <div className="flex flex-col sm:flex-row justify-center items-center p-10 lg:px-20 w-11/12 mx-auto bg-white my-14 rounded-2xl">
+      <div className=" max-w-5xl flex flex-col sm:flex-row justify-center items-center p-10 lg:px-20 w-11/12 mx-auto bg-white my-14 rounded-2xl">
         <div className="w-full">
           <h1 className="text-3xl mb-5 text-gray-800 font-bold">
             Send me a Message
@@ -47,7 +47,7 @@ function Contact() {
             name="subject"
           />
           <label className="input-label">Email</label>
-          <input type="email" name="email" className="input-style" />
+          <input type="email" name="email" className="input-style" required />
           <label className="input-label">Message</label>
           <textarea className="input-style h-32" name="message" required />
           <button

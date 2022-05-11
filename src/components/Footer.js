@@ -7,7 +7,7 @@ function Footer() {
   };
   return (
     <footer className="bg-[#F4F7F9]  py-5">
-      <div className="w-11/12 flex justify-between items-center mx-auto">
+      <div className="w-11/12 flex justify-between items-center mx-auto  max-w-5xl">
         <div className="flex">
           <a
             href="https://github.com/eglereact"
