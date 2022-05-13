@@ -25,24 +25,24 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="flex items-center justify-center mx-auto flex-col w-5/6 md:w-3/4  max-w-5xl"
+      className="flex items-center py-16 justify-center mx-auto flex-col w-5/6 md:w-3/4  max-w-5xl"
     >
       <div className="p-4 text-center">
-        <p className="text-sm text-[#0B2154]">My Abilities</p>
-        <h1 className="text-[#EF310F] font-bold text-2xl">My Skills</h1>
+        <p className="input-label">My Abilities</p>
+        <h1 className="text-[#FF8377] py-3 font-bold text-2xl">My Skills</h1>
       </div>
       <div className="w-full md:flex items-center justify-center">
-        <div className="bg-white md:w-1/2 m-4 shadow-xl rounded-lg h-80">
-          <h2 className="text-[#EF310F] font-bold text-center text-lg p-2">
+        <div className=" md:w-1/2 m-4 rounded-lg h-80 bg-[#F4F7F9]">
+          <h2 className="text-gray-800 font-bold text-center text-2xl py-3 ">
             Frontend knowledge
           </h2>
           <div className=" flex flex-wrap p-4">
             {skillsFront.map((skill) => (
               <p
                 key={skill.id}
-                className="flex items-center w-1/2 p-4 font-bold text-[#0B2154]"
+                className="flex items-center w-1/2 p-4 font-bold text-gray-600"
               >
-                <span className="mr-2 text-[#EF310F]">
+                <span className="mr-2 text-[#FF8377]">
                   <AiFillCheckCircle />
                 </span>
                 {skill.name}
@@ -50,17 +50,17 @@ function Skills() {
             ))}
           </div>
         </div>
-        <div className="bg-white md:w-1/2 m-4 shadow-xl rounded-lg h-80">
-          <h2 className="text-[#EF310F] font-bold text-center text-lg p-2">
+        <div className="md:w-1/2 m-4 rounded-lg bg-[#F4F7F9] h-80">
+          <h2 className="text-gray-800 font-bold text-center text-2xl py-3">
             Other knowledge
           </h2>
           <div className=" flex flex-wrap p-4">
             {skillsBack.map((skill) => (
               <p
                 key={skill.id}
-                className="flex items-center w-1/2 p-4 font-bold text-[#0B2154]"
+                className="flex items-center w-1/2 p-4 font-bold text-gray-600"
               >
-                <span className="mr-2 text-[#EF310F]">
+                <span className="mr-2 text-[#FF8377]">
                   <AiFillCheckCircle />
                 </span>
                 {skill.name}

@@ -7,7 +7,6 @@ const allCategories = [
   "all",
   ...new Set(projectsInfo.map((project) => project.category)),
 ];
-console.log(allCategories);
 
 // TODO: animations, active button stays styled
 function Projects() {
@@ -29,10 +28,10 @@ function Projects() {
   };
 
   return (
-    <div id="projects" className="pb-10">
+    <div id="projects" className="py-16 bg-[#F4F7F9]">
       <header className="flex flex-col items-center justify-content">
-        <p className="text-sm text-[#0B2154]">My Portfolio</p>
-        <h1 className="text-[#EF310F] font-bold text-2xl">Recent Works</h1>
+        <p className="input-label">My Portfolio</p>
+        <h1 className="text-[#FF8377] py-3 font-bold text-2xl">Recent Works</h1>
       </header>
       <section className="flex items-center justify-center">
         <Categories

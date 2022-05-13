@@ -4,9 +4,9 @@ function Categories({ filterProjects, categories, active }) {
       {categories.map((category, index) => {
         return (
           <button
-            className={`${
-              active === category && "bg-[#EF310F] text-white"
-            } rounded-lg px-4 py-1 mx-2 capitalize`}
+            className={`text-gray-600 ${
+              active === category && "bg-[#FF8377] text-white"
+            } rounded-lg px-4 py-1 mx-1 sm:mx-2 capitalize`}
             key={index}
             onClick={() => filterProjects(category)}
           >
