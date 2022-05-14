@@ -1,51 +1,58 @@
+import linked from "./images/linked.jpg";
+import twozero from "./images/2048.jpg";
+import twitter from "./images/twitter.jpg";
+import wordle from "./images/wordle.jpg";
+import insta from "./images/insta.jpg";
+import pricing from "./images/pricing.jpg";
+
 const projectsInfo = [
   {
     id: 1,
-    title: "twitter clone",
+    title: "LinkedIn Clone",
     category: "website",
-    img: "https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    git: "https://github.com/eglereact/Insta-clone",
-    demo: "https://insta-clone-one-neon.vercel.app/",
+    img: linked,
+    git: "https://github.com/eglereact/Nideknil-linkedIn-clone",
+    demo: "https://nideknil-ej.vercel.app",
   },
   {
     id: 2,
-    title: "twitter clone",
-    category: "mini projects",
-    img: "https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    git: "https://github.com/eglereact/Insta-clone",
-    demo: "https://insta-clone-one-neon.vercel.app/",
+    title: "2048 Clone",
+    category: "game",
+    img: twozero,
+    git: "https://github.com/eglereact/2048-clone",
+    demo: "https://2048-clone-ten.vercel.app",
   },
   {
     id: 3,
-    title: "twitter clone",
-    category: "game",
-    img: "https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    git: "https://github.com/eglereact/Insta-clone",
-    demo: "https://insta-clone-one-neon.vercel.app/",
+    title: "Twitter clone",
+    category: "website",
+    img: twitter,
+    git: "https://github.com/eglereact/Rettiwt-twitter-clone",
+    demo: "https://rettiwt.vercel.app",
   },
   {
     id: 4,
-    title: "twitter clone",
-    category: "mini projects",
-    img: "https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    git: "https://github.com/eglereact/Insta-clone",
-    demo: "https://insta-clone-one-neon.vercel.app/",
+    title: "Wordle Clone",
+    category: "game",
+    img: wordle,
+    git: "https://github.com/eglereact/Wordle-clone",
+    demo: "https://wordle-clone-bice.vercel.app",
   },
   {
     id: 5,
-    title: "twitter clone",
-    category: "game",
-    img: "https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    title: "Instagram clone",
+    category: "website",
+    img: insta,
     git: "https://github.com/eglereact/Insta-clone",
     demo: "https://insta-clone-one-neon.vercel.app/",
   },
   {
     id: 6,
-    title: "twitter clone",
+    title: "Pricing",
     category: "mini projects",
-    img: "https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    git: "https://github.com/eglereact/Insta-clone",
-    demo: "https://insta-clone-one-neon.vercel.app/",
+    img: pricing,
+    git: "https://github.com/eglereact/mini-projects/tree/master/pricing",
+    demo: "https://pricing-ej.netlify.app",
   },
 ];
 

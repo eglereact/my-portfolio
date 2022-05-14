@@ -17,9 +17,9 @@ function Sidebar({ isOpen, toggle }) {
       </div>
       <div className="text-white">
         <ul className="grid grid-cols-1 grid-rows-6 text-center">
-          <LinkScroll className="sidebarLink" to="home" onClick={toggle}>
+          {/* <LinkScroll className="sidebarLink" to="home" onClick={toggle}>
             Home
-          </LinkScroll>
+          </LinkScroll> */}
           <LinkScroll className="sidebarLink" to="about" onClick={toggle}>
             About
           </LinkScroll>

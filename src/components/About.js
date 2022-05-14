@@ -4,7 +4,7 @@ import cv from "./../images/eglereactcv.pdf";
 
 function About() {
   return (
-    <div id="about" className="py-10 max-w-5xl mx-auto">
+    <div id="about" className="py-20 max-w-5xl mx-auto">
       <div className="mx-5 md:mx-0 md:flex md:items-center md:justify-between">
         <div className="w-full">
           <img className="hidden md:block" src={AboutImg} alt="about me" />

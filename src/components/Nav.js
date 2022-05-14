@@ -12,16 +12,16 @@ function Nav({ toggle }) {
       <div className="flex justify-between h-20 z-10 w-full px-6 max-w-5xl">
         <Link
           to="/"
-          className="justify-self-start flex items-center font-bold text-[#0B2154]"
+          className="justify-self-start flex items-center font-bold text-gray-600"
           onClick={toggleHome}
         >
-          <span className="text-3xl text-[#EF310F] mr-1 ">
+          <span className="text-3xl text-[#FF8377] mr-1 ">
             <GiFlowerTwirl />
           </span>
           EgleReact
         </Link>
         <div
-          className="md:hidden block absolute  text-[#0B2154] cursor-pointer
+          className="md:hidden block absolute  text-gray-600 cursor-pointer
          right-0 text-3xl top-0 -translate-x-full translate-y-[80%]"
           onClick={toggle}
         >
@@ -36,8 +36,9 @@ function Nav({ toggle }) {
                 spy={true}
                 exact="true"
                 offset={-80}
-                activeClass="border-b-4 border-[#EF310F]"
-                className={`text-[#0B2154] flex text-center px-4 h-full cursor-pointer items-center `}
+                activeClass="border-b-4 border-[#FF8377] text-gray-800"
+                className={`text-gray-600 flex text-center px-4 h-full cursor-pointer items-center hover:border-b-4
+                 hover:border-[#FF8377] font-bold hover:text-gray-800`}
                 to={link.link}
               >
                 {link.name}
@@ -53,7 +54,7 @@ function Nav({ toggle }) {
 export default Nav;
 
 const links = [
-  { id: 1, name: "Home", link: "home" },
+  // { id: 1, name: "Home", link: "home" },
   { id: 2, name: "About", link: "about" },
   { id: 3, name: "Projects", link: "projects" },
   { id: 4, name: "Skills", link: "skills" },

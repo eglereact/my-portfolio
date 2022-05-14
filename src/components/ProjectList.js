@@ -22,13 +22,14 @@ function ProjectList({ projects }) {
               </h1>
               <div className="flex items-center justify-between text-gray-800">
                 <a
+                  target="_blank"
                   href={demo}
                   className="flex items-center py-2 cursor-pointer group "
                 >
                   <span className="mr-1 font-thin text-lg ">Demo</span>
                   <AiOutlineArrowRight className="group-hover:ml-1 transition-all duration-150 ease-out" />
                 </a>
-                <a href={git}>
+                <a href={git} target="_blank">
                   <AiFillGithub className="text-2xl hover:text-[#FF8377] cursor-pointer transition-all duration-150 ease-out hover:scale-125 " />
                 </a>
               </div>
