@@ -4,6 +4,9 @@ import twitter from "./images/twitter.jpg";
 import wordle from "./images/wordle.jpg";
 import insta from "./images/insta.jpg";
 import pricing from "./images/pricing.jpg";
+import movielist from "./images/movielist.jpg";
+import origami from "./images/origami.jpg";
+import contact from "./images/contact.jpg";
 
 const projectsInfo = [
   {
@@ -53,6 +56,30 @@ const projectsInfo = [
     img: pricing,
     git: "https://github.com/eglereact/mini-projects/tree/master/pricing",
     demo: "https://pricing-ej.netlify.app",
+  },
+  {
+    id: 7,
+    title: "Origami Store",
+    category: "website",
+    img: origami,
+    git: "https://github.com/iamEJ/origami-store",
+    demo: "https://origami-gift-store-ej.netlify.app",
+  },
+  {
+    id: 8,
+    title: "Movie List",
+    category: "website",
+    img: movielist,
+    git: "https://github.com/iamEJ/movie-list",
+    demo: "https://movie-watchlist-ej.netlify.app",
+  },
+  {
+    id: 9,
+    title: "Contact Form",
+    category: "mini projects",
+    img: contact,
+    git: "https://github.com/eglereact/mini-projects/tree/master/contact-form",
+    demo: "https://contact-form-eglereact.netlify.app",
   },
 ];
 
