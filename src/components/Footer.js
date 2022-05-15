@@ -16,7 +16,7 @@ function Footer() {
             <AiFillGithub />
           </a>
           <a
-            href="https://github.com/eglereact"
+            href="https://www.linkedin.com/in/eglė-juknevičiūtė-51589b80"
             className="text-gray-600 text-2xl transition-all duration-150 ease-out hover:scale-125 hover:text-[#FF8377]"
           >
             <AiFillLinkedin />
