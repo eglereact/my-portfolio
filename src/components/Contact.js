@@ -1,6 +1,7 @@
 import contactImage from "./../images/contact.svg";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 function Contact() {
   const form = useRef();
@@ -23,7 +24,15 @@ function Contact() {
         }
       );
     form.current.reset();
+    notify();
   };
+
+  // https://react-hot-toast.com/
+  const notify = () =>
+    toast.success(
+      " Thank you for your message. I will respond as soon as possible!",
+      { duration: 5000 }
+    );
 
   return (
     <div id="contact" className="bg-[#F4F7F9] flex justify-center items-center">
@@ -62,6 +71,11 @@ function Contact() {
             ></span>
             <span className="relative">Send a message</span>
           </button>
+          <Toaster
+            toastOptions={{
+              className: "text-center",
+            }}
+          />
         </form>
       </div>
     </div>
